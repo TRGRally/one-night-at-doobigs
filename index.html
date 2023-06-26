@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doobig gaem</title>
+    <link href="//db.onlinewebfonts.com/c/8be4a2f403c2dc27187d892cca388e24?family=Britannic+Bold" rel="stylesheet" type="text/css"/>
+</head>
+<style>
+    body{
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        background-image: url("https://img.freepik.com/free-photo/3d-rendering-emotions_23-2149081943.jpg");
+        background-blend-mode: color-burn;
+        color: #ffffff;
+        font-family: 'Britannic Bold', sans-serif;
+    }
+
+    .pane {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+        border: 2px dashed rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px) brightness(0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.1s ease-out;
+    }
+
+    .pane:hover {
+        background: rgba(255, 255, 255, 0.25);
+        border: 2px dotted rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        transition: 0.1s ease-out;
+    }
+
+    .doobigTitle {
+        font-size: 3rem;
+        transform: skew(-5deg) rotate(-1deg) perspective(100px) translateZ(0) scale(1, 1.4);
+        text-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.9);
+
+    }
+
+    #game {
+        position: fixed;
+        /*centered vertically and horizontally*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, -50%);
+        height: 60%;
+        aspect-ratio: 4 / 3;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    }
+    .credits {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        /*put a drop shadow on all the textr */
+        text-shadow: 0 0 5px rgb(0, 0, 0);
+    }
+</style>
+
+
+<body> 
+    <canvas id="game"></canvas>
+    <div class="pane">
+        <h1 class="doobigTitle">One Night At Doobigs Pre-Release</h1>
+    </div>
+
+    
+    <img style="position: fixed; top: 10px; left: -200px; z-index: -1;"src="https://cdn.discordapp.com/attachments/1024014589286952962/1122321455691083887/Untitled-1.png" alt="doobig">
+    
+    <div class="credits">
+        <h1>Credits</h1>
+        <h2>Chief Game Programmer - TRGRALLY</h2>
+        <h2>Chief Game Design Officer - Nick The Question King</h2>
+        <h2>In Loving Memory Of</h2> 
+        <h3>Aidan "Doobig" Brooks</h3>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
